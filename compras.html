@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/compras.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar is-light"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html"
+            ><h1 class="logo">TechNova</h1></a
+          >
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item"> Comprar</a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> More </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="nosotros.html"> Acerca de nosotros </a>
+                <a class="navbar-item" href="contactanos.html"> Contactanos </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="hero_panel">
+            <img src="imagenes/shopping_hero.jpg" class="heroimage" />
+            <div class="hero-body">
+              <div class="text">
+                <p class="title_hero">TechNova</p>
+            </div>
+        </section>
+        <section class="main_products rows">
+          <h1 class="title_section">Mejores Productos</h1>
+          <section class="my-4 px-4">
+          <div class="columns is-centered is-3 is-multiline is-mobile">
+            <div class="column is full-mobile is-one-third-tablet is-one-quarter-desktop">
+              <div class=" card has-text-black has-background-grey-light">
+                <div class=" card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/ipad_image.jpg"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content ">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/ipad_image.jpg"
+                          alt="Ipad"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content ">
+                      <p class="title is-4 has-text-black ">Ipad Pro</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    <p>
+                      iPad Pro
+                      USB-C Charge Cable (1 meter)
+                      20W USB-C Power Adapter
+                      Polishing cloth in nano-texture display glass option
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/iphone_image.jpg"
+                      alt="Iphone"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/iphone_image.jpg"
+                          alt="Iphone"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Iphone 16</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                   <p>
+                    iPhone 16 Pro is built for Apple Intelligence, the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections.
+                   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column full-mobile is-one-third-tablet is-one-quarter-desktop">
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/samsung_image.jpg"
+                      alt="Samsung Tablet"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/samsung_image.jpg"
+                          alt="Smsung Tablet"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Samsung Tablet</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                   <p>
+                    Samsung Galaxy Tab S8 Ultra is the ultimate tablet for work and play. With a large 14.6-inch Super AMOLED display, it's perfect for watching movies, browsing the web, and getting work done.
+                   </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/note_image.jpg"
+                      alt="Note Ultra"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/note_image.jpg"
+                          alt="Note Ultra"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Samsung Note Ultra</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                   <p>Samsung Note Ultra the phone of the future with our most powerful processor,   dive deep into the action with ultra-smooth gameplay thanks to Snapdragon® 8 Elite Mobile Platform for Galaxy. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column full-mobile is-one-third-tablet is-one-quarter-desktop">
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/apple_watch.png"
+                      alt="Apple Watch"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/apple_watch.png"
+                          alt="Apple watch"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Apple Watch Series 10</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    <p>The Apple Watch series 10 is our thinnest watch ever. To make this possible, we re-engineered nearly every aspect of it, including the SiP, Digital Crown and speaker.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card  has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/galaxy_image.jpg"
+                      alt="Galaxy watch 7"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/galaxy_image.jpg"
+                          alt="Galaxy watch 7"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Galaxy Watch 7</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    <p>
+                      Galaxy Watch 7 understand your body like never before. Our most advanced health sensor tracks your heart rate, sleep patterns and more with high precision.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="second_products">
+        <h1 class="title_section">Productos en oferta</h1>
+        <section class="my-4 px-4">
+            <div class="columns is-centered is-3 is-multiline is-mobile">
+              <div class="column is full-mobile is-one-third-tablet is-one-quarter-desktop">
+                <div class="card has-text-black has-background-grey-light">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="imagenes/buds3pro.jpg"
+                        alt="Galaxy Buds"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img
+                            src="imagenes/buds3pro.jpg"
+                            alt="Galaxy Buds"
+                          />
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4 has-text-black">Galaxy Buds 3 Pro</p>
+                      </div>
+                    </div>
+  
+                    <div class="content">
+                     <p> 
+                      Galaxy Buds 3 Pro is the perfect companion for your Galaxy Watch. Enjoy seamless connectivity and crystal-clear sound with our latest earbuds.
+                     </p>
+                       </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column full-mobile is-one-third-tablet is-one-quarter-desktop">
+                <div class="card has-text-black has-background-grey-light">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="imagenes/airpodspro2.jpg"
+                        alt="Air Pods Pro"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img
+                            src="imagenes/airpodspro2.jpg"
+                            alt="Air Pods Pro"
+                          />
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4 has-text-black">AirPods Pro 2</p>
+                       
+                      </div>
+                    </div>
+  
+                    <div class="content">
+                    <p>
+                      The H2-powered AirPods Pro 2 feature Adaptive Audio, automatically prioritizing sounds that need your attention as you move through the world.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column full-mobile is-one-third-tablet is-one-quarter-desktop">
+                <div class="card has-text-black has-background-grey-light">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="imagenes/huaweibudspro.jpg"
+                        alt="Huawei Buds"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img
+                            src="imagenes/huaweibudspro.jpg"
+                            alt="Huawei Buds"
+                          />
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4 has-text-black">Huawei Buds Pro 4</p>
+                      </div>
+                    </div>
+  
+                    <div class="content">
+                      <p>
+                        HUAWEI FreeBuds Pro 4 is the first pair of earbuds to support 2.3 Mbps lossless transmission,⁠ 1 thanks to the Huawei-exclusive L2HC 4.0 audio codec⁠ 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </section>
+      <section class="extra_products">
+        <div class="header_section">
+          <h1 class="title_section">Accesorios</h1>
+        </div>
+        <section class="my-4 px-4">
+          <div class="columns is-centered is-3 is-multiline is-mobile">
+            <div class="column is full-mobile is-one-third-tablet is-one-quarter-desktop">
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/iwallet.jpeg"
+                      alt="Iwallet"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/iwallet.jpeg"
+                          alt="Iwallet"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">IWallet</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                   <p> 
+                  This magentic wallet is compatible with all the magnetic cases and will help you prevent loosing your cards or forgetting your wallet at the same time. 
+                  </p>
+                     </div>
+                </div>
+              </div>
+            </div>
+            <div class="column full-mobile is-one-third-tablet is-one-quarter-desktop">
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/iphonecase.jpg"
+                      alt="Iphone Case"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/iphonecase.jpg"
+                          alt="Iphone Case"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Iphone 16 Case</p>
+                     
+                    </div>
+                  </div>
+
+                  <div class="content">
+                  <p>
+                  This Iphone case would prevent the phone from damages and other kind of injuries.  
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column full-mobile is-one-third-tablet is-one-quarter-desktop">
+              <div class="card has-text-black has-background-grey-light">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="imagenes/ultracase.jpg"
+                      alt="Samsung Ultra Case"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="imagenes/ultracase.jpg"
+                          alt="Samsung Ultra Case"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4 has-text-black">Samsung Ultra 25 Case</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    <p>
+                    This case from Samsung is a great option for those who want to protect their phone from damage. It is made of high-quality materials and has a sleek design that will make your phone stand out.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+      </section>
+    </main>
+    <footer class="footer" style="background-color: white">
+      <section class="is-light">
+        <div class="content has-text-centered">
+          <p>
+            <strong style="color: black">TechNova</strong> by
+            <a href="https://github.com/dbvd28">Diego Varela</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

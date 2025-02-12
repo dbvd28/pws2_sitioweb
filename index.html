@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick&Go</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/shopping.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar is-light"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html"><h1 class="logo">TechNova</h1></a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+
+            <a class="navbar-item" href="compras.html"> Comprar</a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> More </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="nosotros.html"> Acerca de nosotros </a>
+                <a class="navbar-item" href="contactanos.html"> Contactanos </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero_panel">
+        <section class="hero is-danger is-halfheight">
+                <img src="imagenes/shopping_hero.jpg" class="heroimage" />
+              <div class="hero_text">
+                <p class="title_hero">TechNova</p>
+                <p class="subtitle_hero">¡Compra ahora!</p>
+                <button class="button is-link"><a href="compras.html" class="link_hero">Comprar</a></button>
+              </div>
+            </div>
+          </section>
+      </section>
+    </main>
+        <footer class="footer " style="background-color: white; ">
+            <section class="is-light" >
+                <div class="content has-text-centered"  >
+                    <p>
+                      <strong style="color: black">TechNova</strong> by <a href="https://github.com/dbvd28">Diego Varela</a>.
+                    </p>
+                  </div>
+            </section>
+          </footer>
+  </body>
+</html>
